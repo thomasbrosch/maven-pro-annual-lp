@@ -66,9 +66,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 .offer .pop b{color:var(--teal);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
 .offer .was{font-size:20px;color:var(--soft);margin-top:14px}
 .offer .was s{color:var(--mute);text-decoration-thickness:2px}
-.offer .off{font-size:64px;font-weight:900;color:var(--teal);line-height:1;margin:6px 0 6px;letter-spacing:-.02em}
+.offer .off{font-size:clamp(38px,4.6vw,50px);white-space:nowrap;font-weight:900;color:var(--teal);line-height:1;margin:6px 0 6px;letter-spacing:-.02em}
 .offer .now{font-size:34px;font-weight:900;margin-bottom:20px}
 .offer .now small{font-size:15px;font-weight:700;color:var(--soft)}
+.offer .mo{font-size:14px;font-weight:700;color:var(--soft);margin:-14px 0 18px}
+.ama{display:inline-block;margin-top:14px;background:rgba(228,236,132,.12);border:1px solid var(--lime,#e4ec84);color:var(--lime,#e4ec84);font-size:14px;font-weight:700;padding:7px 14px;border-radius:999px}
 .shot{position:relative;margin:0;width:100%;border-radius:16px;overflow:hidden;min-height:420px;background:var(--bg3);box-shadow:0 18px 44px rgba(0,0,0,.4)}
 .shot .ph{position:absolute;inset:0;background:radial-gradient(120% 90% at 20% 10%,rgba(38,215,215,.35),transparent 60%),radial-gradient(90% 70% at 90% 90%,rgba(228,236,132,.22),transparent 60%),#1f2a2a}
 .shot svg,.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block}
@@ -217,23 +219,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header class="hdr"><div class="in">
   <a class="brand" href="#top">MAVEN<small>ANALYTICS</small></a>
   <div class="hproof"><span class="stars" aria-hidden="true">★★★★★</span><span><b>4.6</b> from 198K Udemy ratings</span></div>
-  <div class="hprice"><s>$399</s> <b>$199.50</b> first year</div>
+  <div class="hprice"><s>$399</s> <b>$239</b> first year</div>
   <a class="btn sm" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="header">Get Pro Annual</a>
 </div></header>
 
 <main id="top">
 <section class="hero"><div class="in hgrid">
   <div class="htext">
-    <span class="eyebrow">AI Analyst Week price · ends [DATE]</span>
+    <span class="eyebrow">AI Analyst Week price · ends Mon, Nov 16</span>
     <h1>Become the analyst AI can’t replace</h1>
     <p class="sub">Unlock full access to <em>AI for Data Analysts: 2027 Edition</em> plus everything else in Maven Pro</p>
+    <p class="ama">Join by Mon, Nov 16 and get a seat in a private AMA with Chris Dutton</p>
   </div>
   <div class="offer" id="offer">
     <div class="pop"><b>AI Analyst Week price</b><span>Pro Annual</span></div>
     <div class="was">Normally <s>$399</s> /year</div>
-    <div class="off">50% OFF</div>
-    <div class="now">$199.50 <small>your first year</small></div>
-    <a class="btn lg" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="hero">Get 50% off Pro Annual</a>
+    <div class="off">SAVE $160</div>
+    <div class="now">$239 <small>your first year</small></div>
+    <div class="mo">Under $20 a month, billed annually</div>
+    <a class="btn lg" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="hero">Get Pro Annual: $239</a>
     <p class="fine">Discount applied at checkout. Renews at $399/year. Cancel anytime. Offer not available for existing annual subscribers. Secure checkout with Stripe.</p>
     <div class="rate"><span class="stars" aria-hidden="true">★★★★★</span><span>4.6 average · 198K ratings on Udemy</span></div>
   </div>
@@ -264,8 +268,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="si"><span class="ck">✓</span><div><h3>Expert, human support</h3><p>Real Maven experts help you get unstuck, not a chatbot.</p></div><span class="inc">Included</span></div>
   </div>
   <div class="tot">
-    <div><div class="a">Normally <s>$399/year</s></div><div class="b"><span>50% off:</span> $199.50<small>your first year. Renews at $399/year. Cancel anytime.</small></div></div>
-    <a class="btn lg" style="width:auto" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="stack">Get 50% off</a>
+    <div><div class="a">Normally <s>$399/year</s></div><div class="b"><span>Save $160:</span> $239<small>your first year. Renews at $399/year. Cancel anytime.</small></div></div>
+    <a class="btn lg" style="width:auto" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="stack">Get Pro Annual: $239</a>
   </div>
 </div></section>
 
@@ -296,7 +300,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="step"><i>4</i><div><h3>Put AI to work in Excel and SQL</h3><p>Use Copilot in Excel and AI-assisted SQL on real projects, from seasonal traffic patterns in NYC to hospital records.</p><div class="tags"><span>Guided project: Traffic Safety Analysis</span><span>Guided project: Hospital Analytics</span></div></div></div>
     <div class="step"><i>5</i><div><h3>Turn the analysis into a decision</h3><p>Craft and deliver the story that gets your recommendation acted on.</p></div></div>
   </div>
-  <div class="after"><a class="btn" style="padding:14px 28px" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="outcomes">Get Pro Annual: $199.50</a></div>
+  <div class="after"><a class="btn" style="padding:14px 28px" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="outcomes">Get Pro Annual: $239</a></div>
 </div></section>
 
 <section class="sec cen" id="humans"><div class="in">
@@ -324,19 +328,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h2>One plan. One price. Plain billing.</h2>
   <p class="lead">Here is exactly what you pay and when.</p>
   <div class="bill">
-    <div><small>Today</small><b>$199.50</b><p>50% off your first year of Pro Annual.</p></div>
+    <div><small>Today</small><b>$239</b><p>$160 off your first year of Pro Annual.</p></div>
     <div><small>In 12 months</small><b>$399</b><p>Renews yearly. Cancel anytime before then.</p></div>
-    <div><small>Compared with monthly</small><b>$388.50 less</b><p>Twelve months of Pro Monthly at $49 is $588.</p></div>
+    <div><small>Compared with monthly</small><b>$349 less</b><p>Twelve months of Pro Monthly at $49 is $588.</p></div>
   </div>
-  <p class="cmp">Normally <b>$399/year</b>. Today <b>50% off</b> for live workshops, every course and path, guided projects and a public portfolio.</p>
-  <p style="margin-top:22px"><a class="btn lg" style="width:auto;min-width:min(100%,360px)" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="price">Get Pro Annual: $199.50</a></p>
+  <p class="cmp">Normally <b>$399/year</b>. Today <b>$160 off</b> for live workshops, every course and path, guided projects and a public portfolio.</p>
+  <p style="margin-top:22px"><a class="btn lg" style="width:auto;min-width:min(100%,360px)" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="price">Get Pro Annual: $239</a></p>
   <p class="fine">Secure checkout with Stripe. Offer not available for existing annual subscribers.</p>
 </div></section>
 
 <section class="sec paper" id="faq"><div class="in">
   <h2 class="cen" style="text-align:center">Questions, answered</h2>
   <div class="faq">
-    <details><summary>How much do I pay today?</summary><p>$199.50 for your first year of Pro Annual. That is 50% off the regular $399.</p></details>
+    <details><summary>How much do I pay today?</summary><p>$239 for your first year of Pro Annual. That is $160 off the regular $399.</p></details>
     <details><summary>What happens after the first year?</summary><p>The plan renews at $399 per year. You can cancel anytime.</p></details>
     <details><summary>Who is this price for?</summary><p>AI Analyst Week registrants. The offer is not available for existing annual subscribers.</p></details>
     <details><summary>What is included in Pro?</summary><p>Every self-paced course and learning path, weekly live workshops with recordings, guided projects, badges for LinkedIn, personalized learning plans, skills assessments, practice datasets, a public Showcase portfolio and expert human support.</p></details>
@@ -348,8 +352,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="close"><div class="in">
   <h2>Lock in your Black Friday price</h2>
-  <p>This early pricing is only for AI Analyst Week registrants, and ends [DATE]. $199.50 for your first year, then $399 per year. Cancel anytime.</p>
-  <a class="btn lg" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="close">Get Pro Annual: $199.50</a>
+  <p>This early pricing is only for AI Analyst Week registrants, and ends Mon, Nov 16. $239 for your first year, then $399 per year. Cancel anytime.</p>
+  <a class="btn lg" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="close">Get Pro Annual: $239</a>
   <div class="foot"><span>© Maven Analytics, LLC | All Rights Reserved</span><a href="https://mavenanalytics.io/terms">Terms &amp; Conditions</a><a href="https://mavenanalytics.io/privacy">Privacy</a><a href="https://mavenanalytics.io/community-forum-policy">Community Forum Policy</a><a href="https://mavenanalytics.io/contact">Contact</a></div>
 </div></section>
 </main>
@@ -360,7 +364,7 @@ document.querySelectorAll('.shot img').forEach(function(im){
   if(im.complete&&!im.naturalWidth)im.remove();
 });
 </script>
-<div class="mbar"><span><b>50% off $399</b>$199.50 first year</span><a class="btn" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="mobile-bar">Get Pro Annual</a></div>
+<div class="mbar"><span><b>Save $160</b>$239 first year</span><a class="btn" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="mobile-bar">Get Pro Annual</a></div>
 <script>
 /* UTM / click-ID passthrough: append the page's tracking params to every CTA */
 (function(){
