@@ -266,6 +266,23 @@ details p{color:var(--papermute);margin-top:10px;font-size:15px}
 @keyframes tscroll{to{transform:translateX(-50%)}}
 @media (max-width:520px){.tq{width:280px}.ttrack{animation-duration:70s}}
 @media (prefers-reduced-motion:reduce){.ttrack{animation:none}.tmarq{overflow-x:auto;-webkit-mask:none;mask:none;padding-inline:16px}.tset[aria-hidden]{display:none}}
+
+/* problem / solution */
+.kick{display:inline-block;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+.pf{max-width:920px;margin:30px auto 0;text-align:left;display:grid;gap:12px}
+.pf-h,.pf-r{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.pf-h span{font-size:12px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);padding-inline:4px}
+.pf-h span:last-child{color:var(--teal)}
+.pf-p,.pf-s{border-radius:12px;padding:18px 20px 18px 50px;position:relative}
+.pf-p{background:var(--bg2);border:1px solid var(--line)}
+.pf-s{background:rgba(38,215,215,.08);border:1px solid rgba(38,215,215,.45)}
+.pf-p::before,.pf-s::before{position:absolute;left:16px;top:18px;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:900}
+.pf-p::before{content:"✕";background:rgba(255,90,95,.16);color:#ff6b6f}
+.pf-s::before{content:"✓";background:var(--grad);color:#1c1c1c}
+.pf b{display:block;font-size:17px;font-weight:900}
+.pf p{font-size:14px;color:var(--mute);margin-top:4px}
+.pf-s p{color:var(--soft)}
+@media (max-width:860px){.pf-h{display:none}.pf-r{grid-template-columns:1fr;gap:6px;margin-bottom:10px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
@@ -286,7 +303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="hero"><div class="in hgrid p3">
   <div class="htext">
     <span class="eyebrow">AI Analyst Week price · ends Mon, Nov 16</span>
-    <h1>Become the analyst AI can’t replace</h1>
+    <h1>More than a course. Less than you’d expect.</h1>
     <p class="sub">Unlock full access to <em>AI for Data Analysts: 2027 Edition</em> plus everything else in Maven Pro</p>
     <p class="ama">Join by Mon, Nov 16 and get a seat in a private AMA with Chris Dutton</p>
   </div>
@@ -325,6 +342,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="pnote">Same Maven Pro on every plan. Only the billing is different.
       <div class="rate"><span class="stars" aria-hidden="true">★★★★★</span><span>4.6 average · 198K ratings on Udemy · Secure checkout with Stripe</span></div>
     </div>
+  </div>
+</div></section>
+
+<section class="sec cen" id="problem"><div class="in">
+  <span class="kick">The problem</span>
+  <h2>AI changed the analyst job. Most training didn’t keep up.</h2>
+  <p class="lead">Every analyst now has AI in their tools. The ones who get ahead know how to direct it, check it and turn its output into decisions.</p>
+  <div class="pf">
+    <div class="pf-h"><span>What’s getting in the way</span><span>How Maven Pro fixes it</span></div>
+    <div class="pf-r"><div class="pf-p"><b>AI sounds right, even when it’s wrong.</b><p>Chatbots invent functions and give confident answers that don’t hold up. If you can’t spot it, your stakeholders will.</p></div><div class="pf-s"><b>Learn to direct and check AI.</b><p>The AI for Data Analysts: 2027 Edition path teaches prompting frameworks and how to catch hallucinations before they reach your boss.</p></div></div>
+    <div class="pf-r"><div class="pf-p"><b>Your skills age fast.</b><p>Tools change every few months. Courses recorded years ago don’t cover Copilot in Excel or AI-assisted SQL.</p></div><div class="pf-s"><b>Learn what analysts use now.</b><p>Weekly live workshops on current tools, plus every course and learning path in one subscription.</p></div></div>
+    <div class="pf-r"><div class="pf-p"><b>Learning alone stalls.</b><p>Video-only courses leave you stuck with no one to ask, and it’s easy to stop halfway.</p></div><div class="pf-s"><b>Get help from real experts.</b><p>Named instructors, live sessions and Maven experts who answer when you’re stuck, not a chatbot.</p></div></div>
+    <div class="pf-r"><div class="pf-p"><b>It’s hard to prove what you can do.</b><p>Without real work to show, it’s hard to stand out in an interview or make the case for a raise.</p></div><div class="pf-s"><b>Build proof as you learn.</b><p>Guided projects on real data, a public Showcase portfolio and badges you can add to LinkedIn.</p></div></div>
   </div>
 </div></section>
 
