@@ -46,7 +46,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:inherit;font-weight:900;letter-spacing:.01em;color:#0e1a1a;background:var(--teal);border:0;border-radius:10px;padding:12px 22px;text-decoration:none;cursor:pointer;white-space:nowrap;box-shadow:0 8px 24px rgba(38,215,215,.3),inset 0 1px 0 rgba(255,255,255,.35);transition:transform .15s,box-shadow .15s,background .15s}
 .btn::after{content:"";width:18px;height:18px;flex:none;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center/contain no-repeat}
 .btn:hover{background:#4ae6e6;transform:translateY(-1px);box-shadow:0 12px 30px rgba(38,215,215,.42),inset 0 1px 0 rgba(255,255,255,.4)}
-.btn.lg{font-size:18px;padding:18px 28px;width:100%;min-height:60px}
+.btn.lg{font-size:18px;padding:18px 28px;width:100%;min-height:60px;white-space:normal;text-align:center}
+.offer .btn.lg{font-size:16px;padding:16px 14px;gap:8px}
 .btn.sm{padding:9px 16px;font-size:14px}
 
 /* hero */
@@ -64,12 +65,12 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 .offer{background:var(--bg2);border:1px solid var(--teal);border-top-width:3px;border-radius:14px;padding:26px 26px 22px;box-shadow:0 0 0 1px rgba(38,215,215,.25),0 20px 50px rgba(0,0,0,.35)}
 .offer .pop{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px;font-weight:700;color:var(--mute)}
 .offer .pop b{color:var(--teal);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
-.offer .was{font-size:20px;color:var(--soft);margin-top:14px}
-.offer .was s{color:var(--mute);text-decoration-thickness:2px}
-.offer .off{font-size:clamp(38px,4.6vw,50px);white-space:nowrap;font-weight:900;color:var(--teal);line-height:1;margin:6px 0 6px;letter-spacing:-.02em}
-.offer .now{font-size:34px;font-weight:900;margin-bottom:20px}
-.offer .now small{font-size:15px;font-weight:700;color:var(--soft)}
-.offer .mo{font-size:14px;font-weight:700;color:var(--soft);margin:-14px 0 18px}
+.offer .price{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 10px;margin-top:14px}
+.offer .price s{font-size:22px;color:var(--mute);text-decoration-thickness:2px}
+.offer .price b{font-size:clamp(52px,5.4vw,68px);font-weight:900;line-height:1;letter-spacing:-.02em;color:var(--ink)}
+.offer .price small{font-size:15px;font-weight:700;color:var(--soft)}
+.offer .mo{font-size:15px;font-weight:700;color:var(--ink);margin:12px 0 12px}
+.offer .save{display:inline-block;background:rgba(228,236,132,.12);color:var(--lime);font-size:13px;font-weight:700;padding:6px 10px;border-radius:6px;margin-bottom:20px}
 .ama{display:inline-block;margin-top:14px;background:rgba(228,236,132,.12);border:1px solid var(--lime,#e4ec84);color:var(--lime,#e4ec84);font-size:14px;font-weight:700;padding:7px 14px;border-radius:999px}
 .shot{position:relative;margin:0;width:100%;border-radius:16px;overflow:hidden;min-height:420px;background:var(--bg3);box-shadow:0 18px 44px rgba(0,0,0,.4)}
 .shot .ph{position:absolute;inset:0;background:radial-gradient(120% 90% at 20% 10%,rgba(38,215,215,.35),transparent 60%),radial-gradient(90% 70% at 90% 90%,rgba(228,236,132,.22),transparent 60%),#1f2a2a}
@@ -180,10 +181,7 @@ details p{color:var(--papermute);margin-top:10px;font-size:15px}
   .offer{text-align:center;padding:24px 20px 20px}
   .shot{min-height:0;aspect-ratio:16/10}
   .offer .pop{flex-direction:column;gap:6px}
-  .offer .was{margin-top:12px}
-  .offer .off{font-size:56px}
-  .offer .now{margin-bottom:18px}
-  .offer .now small{display:block;margin-top:4px}
+  .offer .price{justify-content:center;margin-top:12px}
 }
 @media (max-width:860px){
   .hgrid{grid-template-columns:1fr;grid-template-areas:"text" "offer" "shot";gap:24px}
@@ -233,12 +231,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="offer" id="offer">
     <div class="pop"><b>AI Analyst Week price</b><span>Pro Annual</span></div>
-    <div class="was">Normally <s>$399</s> /year</div>
-    <div class="off">SAVE $160</div>
-    <div class="now">$239 <small>your first year</small></div>
+    <div class="price"><s>$399</s><b>$239</b><small>first year</small></div>
     <div class="mo">Under $20 a month, billed annually</div>
-    <a class="btn lg" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="hero">Get Pro Annual: $239</a>
-    <p class="fine">Discount applied at checkout. Renews at $399/year. Cancel anytime. Offer not available for existing annual subscribers. Secure checkout with Stripe.</p>
+    <div class="save">Save $349 vs paying monthly</div>
+    <a class="btn lg" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="hero">Get the annual plan for $239</a>
+    <p class="fine">Offer not available for existing annual subscribers. Total due today is $239 ($160 off). Plan renews at $399/year. Cancel anytime. Secure checkout with Stripe.</p>
     <div class="rate"><span class="stars" aria-hidden="true">★★★★★</span><span>4.6 average · 198K ratings on Udemy</span></div>
   </div>
   <figure class="shot">
@@ -269,7 +266,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="tot">
     <div><div class="a">Normally <s>$399/year</s></div><div class="b"><span>Save $160:</span> $239<small>your first year. Renews at $399/year. Cancel anytime.</small></div></div>
-    <a class="btn lg" style="width:auto" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="stack">Get Pro Annual: $239</a>
+    <a class="btn lg" style="width:auto" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="stack">Get the annual plan for $239</a>
   </div>
 </div></section>
 
@@ -300,7 +297,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="step"><i>4</i><div><h3>Put AI to work in Excel and SQL</h3><p>Use Copilot in Excel and AI-assisted SQL on real projects, from seasonal traffic patterns in NYC to hospital records.</p><div class="tags"><span>Guided project: Traffic Safety Analysis</span><span>Guided project: Hospital Analytics</span></div></div></div>
     <div class="step"><i>5</i><div><h3>Turn the analysis into a decision</h3><p>Craft and deliver the story that gets your recommendation acted on.</p></div></div>
   </div>
-  <div class="after"><a class="btn" style="padding:14px 28px" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="outcomes">Get Pro Annual: $239</a></div>
+  <div class="after"><a class="btn" style="padding:14px 28px" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="outcomes">Get the annual plan for $239</a></div>
 </div></section>
 
 <section class="sec cen" id="humans"><div class="in">
@@ -333,7 +330,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div><small>Compared with monthly</small><b>$349 less</b><p>Twelve months of Pro Monthly at $49 is $588.</p></div>
   </div>
   <p class="cmp">Normally <b>$399/year</b>. Today <b>$160 off</b> for live workshops, every course and path, guided projects and a public portfolio.</p>
-  <p style="margin-top:22px"><a class="btn lg" style="width:auto;min-width:min(100%,360px)" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="price">Get Pro Annual: $239</a></p>
+  <p style="margin-top:22px"><a class="btn lg" style="width:auto;min-width:min(100%,360px)" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="price">Get the annual plan for $239</a></p>
   <p class="fine">Secure checkout with Stripe. Offer not available for existing annual subscribers.</p>
 </div></section>
 
@@ -353,7 +350,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="close"><div class="in">
   <h2>Lock in your Black Friday price</h2>
   <p>This early pricing is only for AI Analyst Week registrants, and ends Mon, Nov 16. $239 for your first year, then $399 per year. Cancel anytime.</p>
-  <a class="btn lg" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="close">Get Pro Annual: $239</a>
+  <a class="btn lg" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="close">Get the annual plan for $239</a>
   <div class="foot"><span>© Maven Analytics, LLC | All Rights Reserved</span><a href="https://mavenanalytics.io/terms">Terms &amp; Conditions</a><a href="https://mavenanalytics.io/privacy">Privacy</a><a href="https://mavenanalytics.io/community-forum-policy">Community Forum Policy</a><a href="https://mavenanalytics.io/contact">Contact</a></div>
 </div></section>
 </main>
@@ -364,7 +361,7 @@ document.querySelectorAll('.shot img').forEach(function(im){
   if(im.complete&&!im.naturalWidth)im.remove();
 });
 </script>
-<div class="mbar"><span><b>Save $160</b>$239 first year</span><a class="btn" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="mobile-bar">Get Pro Annual</a></div>
+<div class="mbar"><span><b>$239 first year</b>Save $349 vs monthly</span><a class="btn" href="https://fe.mavenanalytics.io/signup/plan/annual-pro-399?promotionCode=promo_1UQAvIBr47J2JI72rDW74VMr&type=pro" data-cta="mobile-bar">Get Pro Annual</a></div>
 <script>
 /* UTM / click-ID passthrough: append the page's tracking params to every CTA */
 (function(){
