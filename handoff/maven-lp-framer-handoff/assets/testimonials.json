@@ -1,0 +1,66 @@
+{
+  "source": "Maven Analytics public testimonial wall (testimonial.to/maven-analytics, as embedded on mavenanalytics.io/testimonials), captured Nov 2026. Text is verbatim; do not edit or fix typos.",
+  "carousel": [
+    {
+      "name": "James Thang",
+      "quote": "If you are thinking if it is worth it, it is! Landed job in less than 3 months."
+    },
+    {
+      "name": "Joel Cobham",
+      "quote": "Maven analytics turned SQL from intimidating to empowering. The course was practical, clear, and game-changing. Scoring 98% was great - but gaining real-world confidence was the true win. Huge thanks to the amazing Maven team for such an inspiring learning journey!"
+    },
+    {
+      "name": "Tracy Anne Griffin Manning",
+      "quote": "Whether you are a beginner or a pro at data analysis, using Excel, Power BI, and AI tools, you'll gain incredible, actionable insights you can use immediately. I'm impressed with how much valuable information is packed into this 2.5-hour class."
+    },
+    {
+      "name": "Lin",
+      "quote": "A great source of learning for as a new BA. The PBi courses have helped me tremendously finding my footing in my new role when there wasn't a person to hold your hand to go through everything."
+    },
+    {
+      "name": "Matthew",
+      "quote": "This course was awesome — super easy to follow, incredibly useful, and packed with real practice. The assessments weren’t just fluff; they actually made the skills stick. Everything built on itself smoothly, and by the end, I felt way more confident writing real SQL."
+    },
+    {
+      "name": "Tom McLellan",
+      "quote": "Fantastic! I wanted to level up our analytics skills so we can make better decisions and work smarter. Maven's training has been a game-changer - it's taken a complex tool like Power BI and made it so much easier to get started. Thank you!"
+    },
+    {
+      "name": "Yasir Iftikhar Abbasi",
+      "quote": "I had a fantastic experience! I gained valuable skills that I was able to apply immediately in my job. The learning process was smooth, engaging and practical. After completing the course, I felt confident enough to lead a project using the tools I learned. It’s truly empowering to see real results from what I studied."
+    },
+    {
+      "name": "Mairilyn Yera",
+      "quote": "Best Excel course to really understand and practice the amazing potential of Excel when comes to working with data, from cleaning to aggregations, insights and charts!"
+    },
+    {
+      "name": "Sêna KOUKOUI",
+      "quote": "I really enjoyed the training!\nThe explanations were clear and concise.\nAfter this training, I'm really more at ease with Power BI Desktop and I'm ready to produce my own Dashboards.\nI 100% recommend the course."
+    },
+    {
+      "name": "Lora A Vallely",
+      "quote": "So many great tools and tips in this course.  Feeling confident that I can present well online, in my resume and ready to take on the interview process!  Can't thank this team enough for all the great training and advice."
+    },
+    {
+      "name": "Junyoung Kim",
+      "quote": "This lecture was exceptionally insightful and well-structured, providing practical insights that I can immediately apply to my actual work."
+    },
+    {
+      "name": "BADR ALOWFI",
+      "quote": "Thank you for the encouragement! I've learned so much and gained valuable skills that have helped me take significant steps forward in my career. It's great to be part of a learning community that truly supports growth and success!"
+    },
+    {
+      "name": "Riya Tiwari",
+      "quote": "I just wanted to say a big thank you for your awesome ChatGPT course! As someone who's really interested in AI and how computers understand language, your course has been super helpful.\n\nI love how you explain everything step by step, from the basics to the cool stuff you can do with ChatGPT."
+    },
+    {
+      "name": "Jason",
+      "quote": "I enrolled in this course with Maven Analytics from a friends recommendation not really knowing how great it may be (misconception of online learning) but, Maven Analytics has taught me more than what I learnt through a data analysis unit at University. Looking forward to more new found skills with Maven!"
+    }
+  ],
+  "featured_quote": {
+    "name": "Rui Carreira",
+    "quote": "This course was incredibly valuable, it showed me how to leverage AI to streamline data analysis, automate workflows, and generate insights more efficiently. The hands-on lessons and real-world examples made it practical and easy to apply right away. Highly recommend it to anyone looking to boost their data skills with the power of ChatGPT!",
+    "used_in": "\"Don’t take our word for it\" section"
+  }
+}
